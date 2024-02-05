@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+:root{
+  --red:red;
+  --gray:#2e2e2e;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 72px;
+}
+
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+button{
+  all:unset;
+  padding: 3px 18px;
+  border-radius: 5px;
+  background-color: var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover{
+  background: rgb(203, 11, 11);
+}
+.main{
+  display: flex;
+  max-width: 1280px;
+  margin: 0 30px;
+  align-items: center;
+  justify-content: space-around;
+  height:calc(100vh-72px);
+}
+.hero-content{
+  width: 40%;
+
+}
+.main h1{
+  font-weight:800;
+  font-size:70px;
+  line-height: 80px;
+}
+.main p{
+  font-weight:600;
+  color: var(--gray);
+  max-width: 400px;
+}
+
+.hero-btn{
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+.secondary-btn{
+  background: transparent;
+  border: 1px solid gray;
+  color: var(--gray);
+  
+}
+
+.secondary-btn:hover{
+  color:#fff;
+}
+
+.shopping p{
+  font-size: 14px;
+  margin: 8px 0;
+}
+.brand-icons{
+  display: flex;
+  gap: 17px;
+}
+
+@media screen and (max-width:1020px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .hero-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+  }
+
+  .hero-content > h1{
+    text-align: center;
+  }
+  .hero-content p{
+    max-width:100%;
+    text-align: center;
+    
+  }
+  .hero-btn:nth-child(n){
+      margin: 0 auto;
+  }
+  .brand-icons:nth-child(n){
+     text-align: center;
+  }
+  .brand-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:574px){
+     .grow-items{
+      visibility: hidden;
+      }
+
+     .login-btn{
+      visibility: hidden;
+      }
+     .menu-btn{
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+     }
+     nav{
+      display: flex;
+      justify-content: space-between;
+    }
+
+}
